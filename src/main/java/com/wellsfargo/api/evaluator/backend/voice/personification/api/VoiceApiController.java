@@ -18,10 +18,42 @@ public class VoiceApiController {
             produces = {"application/json"},
             consumes = {"multipart/form-data"}
     )
-    public ResponseEntity<VoiceApiResponse> analyzeVoice(@RequestPart(value = "file")MultipartFile file, @RequestPart(value = "field1") String field1) {
+    public ResponseEntity<VoiceApiResponse> analyzeVoice(@RequestPart(value = "file")MultipartFile file, @RequestPart(value = "field1", required = false) String field1) {
+        if(file != null && file.getOriginalFilename().endsWith("ai1.mp3")) {
+            return new ResponseEntity<>(getSampleAI_Response(), HttpStatus.OK);
+        } else if(file != null && file.getOriginalFilename().endsWith("human1.mp3")) {
+            return new ResponseEntity<>(getSampleHuman_Response(), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
+    private VoiceApiResponse getSampleAI_Response() {
         VoiceApiResponse response = new VoiceApiResponse();
         response.setResponseTime(Long.valueOf(1234));
-        response.setStatus(field1);
+        response.setStatus("AI_OK");
+        Analysis analysis = new Analysis();
+        analysis.setDetectedVoice(true);
+        analysis.setVoiceType(VoiceType.AI_Generated);
+
+        AdditionalInfo additionalInfo = new AdditionalInfo();
+        additionalInfo.setBackgroundNoiseLevel(BackgroundNoiseLevel.low);
+        additionalInfo.setEmotionalTone(EmotionalTone.neutral);
+        analysis.setAdditionalInfo(additionalInfo);
+
+        ConfidenceScore confidenceScore = new ConfidenceScore();
+        confidenceScore.setAiProbability(0.8678912);
+        confidenceScore.setHumanProbability(0.1678912);
+        analysis.setConfidenceScore(confidenceScore);
+
+        response.setAnalysis(analysis);
+        return response;
+    }
+
+    private VoiceApiResponse getSampleHuman_Response() {
+        VoiceApiResponse response = new VoiceApiResponse();
+        response.setResponseTime(Long.valueOf(1234));
+        response.setStatus("HUMAN_OK");
         Analysis analysis = new Analysis();
         analysis.setDetectedVoice(true);
         analysis.setVoiceType(VoiceType.human);
@@ -37,6 +69,6 @@ public class VoiceApiController {
         analysis.setConfidenceScore(confidenceScore);
 
         response.setAnalysis(analysis);
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        return response;
     }
 }
