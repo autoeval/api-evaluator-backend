@@ -1,4 +1,4 @@
-package com.wellsfargo.api.evaluator.backend.voice.personification.model;
+package com.autoeval.api.evaluator.backend.voice.personification.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

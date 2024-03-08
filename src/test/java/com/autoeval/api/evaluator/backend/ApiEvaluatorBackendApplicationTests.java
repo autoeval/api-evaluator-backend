@@ -1,4 +1,4 @@
-package com.wellsfargo.api.evaluator.backend;
+package com.autoeval.api.evaluator.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

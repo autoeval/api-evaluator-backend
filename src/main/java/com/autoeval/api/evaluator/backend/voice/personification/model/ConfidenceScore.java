@@ -1,4 +1,4 @@
-package com.wellsfargo.api.evaluator.backend.voice.personification.model;
+package com.autoeval.api.evaluator.backend.voice.personification.model;
 
 public class ConfidenceScore {
     private double aiProbability;

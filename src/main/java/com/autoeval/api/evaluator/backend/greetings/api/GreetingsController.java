@@ -1,7 +1,7 @@
-package com.wellsfargo.api.evaluator.backend.greetings.api;
+package com.autoeval.api.evaluator.backend.greetings.api;
 
-import com.wellsfargo.api.evaluator.backend.greetings.model.GreetingsRequest;
-import com.wellsfargo.api.evaluator.backend.greetings.model.GreetingsResponse;
+import com.autoeval.api.evaluator.backend.greetings.model.GreetingsRequest;
+import com.autoeval.api.evaluator.backend.greetings.model.GreetingsResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

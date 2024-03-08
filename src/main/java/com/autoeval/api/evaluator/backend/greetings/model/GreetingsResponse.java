@@ -1,4 +1,4 @@
-package com.wellsfargo.api.evaluator.backend.greetings.model;
+package com.autoeval.api.evaluator.backend.greetings.model;
 
 public class GreetingsResponse {
     private String message;

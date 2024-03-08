@@ -1,6 +1,6 @@
-package com.wellsfargo.api.evaluator.backend.voice.personification.api;
+package com.autoeval.api.evaluator.backend.voice.personification.api;
 
-import com.wellsfargo.api.evaluator.backend.voice.personification.model.*;
+import com.autoeval.api.evaluator.backend.voice.personification.model.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
