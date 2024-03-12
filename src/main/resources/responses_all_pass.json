@@ -158,5 +158,37 @@
     },
     "responseTime": 1234,
     "status": "NON_VOICE"
+  },
+  "noisy.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.8,
+        "humanProbability": 0.0
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "NOISY_AI"
+  },
+  "noisy-human.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "human",
+      "confidenceScore": {
+        "aiProbability": 0.0,
+        "humanProbability": 0.8
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "NOISY_HUMAN"
   }
 }
