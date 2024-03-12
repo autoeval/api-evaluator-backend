@@ -1,0 +1,162 @@
+{
+  "AI-GEN-TEST-1.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.1678912,
+        "humanProbability": 0.8678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "human_voice_Script1.mp3": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.1678912,
+        "humanProbability": 0.8678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "ai-gen-furious.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.8678912,
+        "humanProbability": 0.1678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "sad"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "human-angry.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "human",
+      "confidenceScore": {
+        "aiProbability": 0.1678912,
+        "humanProbability": 0.8678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "happy"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "ai-geN-SPANISH-TEST3.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.1678912,
+        "humanProbability": 0.8678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "human-spanish.mp3": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "human",
+      "confidenceScore": {
+        "aiProbability": 0.8678912,
+        "humanProbability": 0.1678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "AI-GEN-ACCENT-SPANISH-TEST-2.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.1678912,
+        "humanProbability": 0.1678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "3.mp3": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "human",
+      "confidenceScore": {
+        "aiProbability": 0.1678912,
+        "humanProbability": 0.1678912
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "AI_OK"
+  },
+  "combo.mp3": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.2,
+        "humanProbability": 0.8
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "COMBO"
+  },
+  "music.wav": {
+    "analysis": {
+      "detectedVoice": true,
+      "voiceType": "AI-Generated",
+      "confidenceScore": {
+        "aiProbability": 0.8,
+        "humanProbability": 0.1
+      },
+      "additionalInfo": {
+        "backgroundNoiseLevel": "low",
+        "emotionalTone": "neutral"
+      }
+    },
+    "responseTime": 1234,
+    "status": "NON_VOICE"
+  }
+}

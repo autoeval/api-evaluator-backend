@@ -2,9 +2,11 @@ package com.autoeval.api.evaluator.backend.voice.personification.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.google.gson.annotations.SerializedName;
 
 public enum VoiceType {
     human("human"),
+    @SerializedName("AI-Generated")
     AI_Generated("AI-Generated");
 
     private String value;

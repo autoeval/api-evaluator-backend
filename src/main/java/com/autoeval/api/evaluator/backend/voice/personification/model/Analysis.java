@@ -37,4 +37,14 @@ public class Analysis {
     public void setAdditionalInfo(AdditionalInfo additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
+
+    @Override
+    public String toString() {
+        return "Analysis{" +
+                "detectedVoice=" + detectedVoice +
+                ", voiceType=" + voiceType +
+                ", confidenceScore=" + confidenceScore +
+                ", additionalInfo=" + additionalInfo +
+                '}';
+    }
 }

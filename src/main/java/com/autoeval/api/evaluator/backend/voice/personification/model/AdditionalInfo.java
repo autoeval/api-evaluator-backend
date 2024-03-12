@@ -19,4 +19,12 @@ public class AdditionalInfo {
     public void setEmotionalTone(EmotionalTone emotionalTone) {
         this.emotionalTone = emotionalTone;
     }
+
+    @Override
+    public String toString() {
+        return "AdditionalInfo{" +
+                "backgroundNoiseLevel=" + backgroundNoiseLevel +
+                ", emotionalTone=" + emotionalTone +
+                '}';
+    }
 }

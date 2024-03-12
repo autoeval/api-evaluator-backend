@@ -19,4 +19,12 @@ public class ConfidenceScore {
     public void setHumanProbability(double humanProbability) {
         this.humanProbability = humanProbability;
     }
+
+    @Override
+    public String toString() {
+        return "ConfidenceScore{" +
+                "aiProbability=" + aiProbability +
+                ", humanProbability=" + humanProbability +
+                '}';
+    }
 }
